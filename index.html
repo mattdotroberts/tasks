@@ -1,24 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Practice Manipulating the DOM</title>
- </head>
-<body>
-  <div class="container">
-    <h1></h1>
-    <p class="desc"></p>
-    <ul>
-      <li><input> Play music</li>
-      <li><input> Swim</li>
-      <li><input> Bike ride</li>
-      <li><input> Code</li>
-    </ul>
-    <div class="extra">
-      <p>This is extra content you need to delete.</p>
+<html>
+  <head>
+    <title>JavaScript and the DOM</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1 id="myHeading">JavaScript and the DOM</h1>
+    <p>Making a web page interactive</p>
+    <button id="toggleList">Hide list</button>
+    <div class="list">
+      <p class="description">Things that are purple:</p>
+      <input type="text" class="description">
+      <button class="description">Change list description</button>
+      <ul>
+        <li>grapes 
+          <button class="up">Up</button>          
+          <button class="remove">Remove</button>
+        </li>
+        <li>amethyst 
+          <button class="up">Up</button>          
+          <button class="remove">Remove</button>
+        </li>
+        <li>lavender 
+          <button class="up">Up</button>          
+          <button class="remove">Remove</button>
+        </li>
+        <li>plums 
+          <button class="up">Up</button>          
+          <button class="remove">Remove</button>
+        </li>
+      </ul>
+      <input type="text" class="addItemInput">
+      <button class="addItemButton">Add item</button>
     </div>
-  </div>
-  <script src="js/scripts.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
